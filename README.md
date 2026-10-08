@@ -9,7 +9,7 @@ Aplicación web para una sala de cine, con catálogo, cartelera, reservaciones y
 - SQL Server
 - Autenticación JWT, validación de solicitudes y carga de imágenes
 
-## Preparación
+## Preparación.
 
 1. Instala dependencias en `frontend` y `backend` con el gestor correspondiente a cada `package.json`.
 2. Crea una base SQL Server y aplica un esquema propio. Los scripts SQL originales y los informes internos no forman parte de esta publicación.
