@@ -1,0 +1,101 @@
+@import "@fontsource-variable/geist";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  background: #000000;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: #000000;
+  color: #EAEAEA;
+  font-family: 'Geist Variable', Inter, system-ui, sans-serif;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  transition: all 300ms ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1A1A1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3F3F46;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37; 
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 0%; 
+    --foreground: 0 0% 92%; 
+    
+    --card: 0 0% 7%; 
+    --card-foreground: 0 0% 92%;
+    
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 92%;
+    
+    --primary: 43 74% 52%; 
+    --primary-foreground: 0 0% 0%;
+    
+    --secondary: 0 0% 13%; 
+    --secondary-foreground: 0 0% 92%;
+    
+    --muted: 0 0% 13%;
+    --muted-foreground: 0 0% 53%; 
+    
+    --accent: 0 0% 13%;
+    --accent-foreground: 0 0% 92%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 92%;
+    
+    --border: 0 0% 13%; 
+    --input: 0 0% 13%;
+    --ring: 43 74% 52%; 
+    
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
